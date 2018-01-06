@@ -58,7 +58,17 @@ hr {
 .left-align {
 	text-align: left;
 }
-
+.top-push {
+	margin-top: 2%;
+}
+.chart-size {
+	width: 90%
+}
+@media(max-width: 500px) {
+	.chart-size {
+		width: 100%
+	}
+}
 /* navbar */
 .navbar-default {
 	background-color: #fff;
