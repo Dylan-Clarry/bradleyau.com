@@ -1,0 +1,398 @@
+/* tags */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+img {
+	display: block;
+	width: 100%;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+p {
+	font-size: 16px;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+	text-align: justify;
+}
+a:hover {
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+hr {
+	border-color: #000;
+	opacity: 0.2;
+}
+
+
+/*----- global -----*/
+.underline {
+	text-decoration: underline;
+}
+.size-up {
+	font-size: 20px;
+}
+.size-down {
+	font-size: 14px;
+}
+.right-align {
+	text-align: right;
+}
+.left-align {
+	text-align: left;
+}
+
+/* navbar */
+.navbar-default {
+	background-color: #fff;
+	transition: all ease 0.3s;
+}
+.navbar-default .navbar-brand {
+	font-family: "Montserrat";
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #000;
+}
+.navbar-default .navbar-nav>li>a {
+	font-family: "open sans";
+	font-size: 12.5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #000;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+.navbar-default button {
+	background-color: #fff;
+	opacity: 0.6;
+}
+.navbar-header {
+	padding-right: 10px;
+}
+
+/* big-nav */
+.big-nav.navbar-default .navbar-nav>.active>a,
+.big-nav.navbar-default .navbar-nav>.active>a:focus,
+.big-nav.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #0086b3;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #666;
+	padding: 8px 15px;
+	margin: 7px;
+}
+.big-nav .container-fluid {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+/* tranparent navbar */
+.transparent {
+	background: transparent;
+	border-bottom: none;
+	padding-top: 15px;
+	transition: all ease 0.3s;
+}
+.transparent .navbar-brand,
+.transparent .navbar-nav>li>a  {
+	color: #fff;
+	transition: all ease 0.2s;
+}
+
+.transparent .navbar-nav>.active>a,
+.transparent .navbar-nav>.active>a:focus,
+.transparent .navbar-nav>.active>a:hover {
+	color: #fff;
+	background: none;
+	border: 1px solid #fff;
+}
+.transparent .navbar-nav>.active>a:hover {
+	color: #000;
+	border-color: #000;
+	transition: all ease 0.2s;
+}
+.big-nav.transparent .navbar-nav>.active>a,
+.big-nav.transparent .navbar-nav>.active>a:focus,
+.big-nav.transparent .navbar-nav>.active>a:hover {
+	color: #fff;
+	background: none;
+	border: 1px solid #fff;
+}
+
+
+/* footer */
+#footer .container {
+	padding: 7% 0;
+}
+#footer ul, #footer p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+}
+#footer li {
+	display: inline-block;
+	margin: 0 4px;
+}
+#footer i {
+	color: #000;
+	font-size: 23px;
+}
+#footer a {
+	color: #000;
+}
+.mobile-links {
+	display: none;
+}
+@media(max-width: 767px) {
+	.mobile-links {
+		display: block;
+	}
+	#footer .container {
+	padding: 15% 0;
+	}
+}
+
+/*----------- page-content ----------*/
+/* index.html */
+img::selection {
+	background: #999;
+}
+.background-mtn {
+	background: url(../img/background/mountains.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#about {
+	margin-top: 50px;
+}
+#about div {
+	color: #fff;
+}
+#about a {
+	color: #fff;
+}
+#about img {
+	width: 90%;
+	margin: auto auto;
+}
+#about p::selection, #about a::selection, #about h1::selection {
+	background: #999;
+}
+#about-first, #about-last {
+	padding: 13% 0;
+}
+#about-first h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+#about-first p {
+	line-height: 30px;
+	padding-top: 20px;
+}
+#about-last p{
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* experience.html */
+.background-city {
+	background: url(../img/background/city.jpg);
+	background-size: cover;
+	background-position: center 69%;
+	background-attachment: fixed;
+	height: 280px;
+}
+.background-city h1 {
+	padding-top: 80px;
+}
+.background-sky-hills {
+	background: url(../img/background/sky-hills.jpg);
+	background-size: cover;
+	background-position: center 10%;
+}
+.background-sky {
+	background: url(../img/background/sky.jpg);
+	background-size: cover;
+	background-position: center 10%;
+}
+
+#experience, #experience p {
+	text-align: center;
+	color: #fff;
+}
+#experience hr {
+	border-color: #000;
+	opacity: 0.2;
+	width: 60%;
+	margin: 0 auto;
+}
+#experience>div:first-child h1{
+	font-size: 80px;
+	font-weight: 300;
+}
+#experience-content div {
+	padding: 3% 0;
+}
+#experience-content div>p:last-child {
+	font-size: 1em;
+}
+#experience-content h1 {
+	font-size: 60px;
+}
+#experience-content h4 {
+	padding-top: 25px;
+}
+#experience-content h4 a {
+	color: #fff;
+}
+
+
+#experience-school {
+	padding: 5% 0 5% 0;
+}
+#experience-school h1 {
+	font-size: 60px;
+}
+#experience .left-align {
+	padding-top: 5%;
+}
+#experience .left-align p {
+	text-align: left;
+}
+@media(max-width: 998px) {
+	#experience .left-align {
+		padding: 2% 0
+	}
+	#experience .left-align p {
+		text-align: center;
+	}
+	#experience .right-align {
+		text-align: center;
+	}
+}
+
+
+/* professional-experience.html */
+#professional-experience {
+	line-height: 30px;
+	color: #000;
+	padding-top: 150px;
+}
+#professional-experience a {
+	color: #000;
+}
+#professional-experience p {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 0;
+}
+#professional-experience h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 700;
+	padding: 20px 0;
+}
+#professional-experience img:hover {
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+.inline h3, .inline h4, .inline p {
+	display: inline;
+}
+/* investments */
+.background-suitman {
+	background: url(../img/background/suits.jpg);
+	background-size: cover;
+	background-position: center 40%;
+	background-attachment: fixed;
+	height: 280px;
+}
+.background-suitman h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 80px;
+	padding-top: 80px;
+}
+#investments {
+	padding: 3% 0 0 0;
+}
+#investments p {
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 25px;
+}
+
+/*----------- responsive ----------*/
+
+
+/* index.html */
+@media (max-width:1200px) and (min-width:975px) {
+	#about-last {
+	position: relative;
+	transform: translateY(12%);
+	}
+}
+@media (max-width:975px) {
+	#about-first, #about-last {
+	padding: 5% 0;
+	}
+}
+
+/* experience.html */
+@media (max-width:500px) {
+	.background-city {
+		background-attachment: scroll;
+	}
+	#experience>div:first-child h1{
+		font-size: 60px;
+	}
+	#experience-content h1 {
+		font-size: 50px;
+	}
+	#experience-content {
+		padding: 0 3px;
+	}
+	#experience-content p {
+		font-size: 1em;
+	}
+	#experience-school h1 {
+		font-size: 45px;
+	}
+	.container-fluid {
+	padding-right: 5px;
+	padding-left: 10px;
+	}
+}
+
+/* investments */
+@media (max-width:500px) {
+	.background-suitman h1 {
+	font-size: 60px;
+	}
+	#chart {
+		margin-bottom: 5%;
+	}
+}
