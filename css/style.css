@@ -225,6 +225,18 @@ img::selection {
 	text-align: center;
 	padding-top: 30px;
 }
+/* index.html - responsive */
+@media (max-width:1200px) and (min-width:975px) {
+	#about-last {
+	position: relative;
+	transform: translateY(12%);
+	}
+}
+@media (max-width:975px) {
+	#about-first, #about-last {
+	padding: 5% 0;
+	}
+}
 
 /* experience.html */
 .background-city {
@@ -302,9 +314,37 @@ img::selection {
 		text-align: center;
 	}
 }
+/*-----------------------------------------*/
+/*----- experience.html - responsive -----*/
+/*---------------------------------------*/
+@media (max-width:500px) {
+	.background-city {
+		background-attachment: scroll;
+	}
+	#experience>div:first-child h1{
+		font-size: 60px;
+	}
+	#experience-content h1 {
+		font-size: 50px;
+	}
+	#experience-content {
+		padding: 0 3px;
+	}
+	#experience-content p {
+		font-size: 1em;
+	}
+	#experience-school h1 {
+		font-size: 45px;
+	}
+	.container-fluid {
+	padding-right: 5px;
+	padding-left: 10px;
+	}
+}
 
-
-/* professional-experience.html */
+/*-----------------------------------------*/
+/*----- professional-experience.html -----*/
+/*---------------------------------------*/
 #professional-experience {
 	line-height: 30px;
 	color: #000;
@@ -336,7 +376,9 @@ img::selection {
 .inline h3, .inline h4, .inline p {
 	display: inline;
 }
-/* investments */
+/*----------------------------------*/
+/*---------- investments ----------*/
+/*--------------------------------*/
 .background-suitman {
 	background: url(../img/background/suits.jpg);
 	background-size: cover;
@@ -359,50 +401,9 @@ img::selection {
 	letter-spacing: 0;
 	line-height: 25px;
 }
-
-/*----------- responsive ----------*/
-
-
-/* index.html */
-@media (max-width:1200px) and (min-width:975px) {
-	#about-last {
-	position: relative;
-	transform: translateY(12%);
-	}
-}
-@media (max-width:975px) {
-	#about-first, #about-last {
-	padding: 5% 0;
-	}
-}
-
-/* experience.html */
-@media (max-width:500px) {
-	.background-city {
-		background-attachment: scroll;
-	}
-	#experience>div:first-child h1{
-		font-size: 60px;
-	}
-	#experience-content h1 {
-		font-size: 50px;
-	}
-	#experience-content {
-		padding: 0 3px;
-	}
-	#experience-content p {
-		font-size: 1em;
-	}
-	#experience-school h1 {
-		font-size: 45px;
-	}
-	.container-fluid {
-	padding-right: 5px;
-	padding-left: 10px;
-	}
-}
-
-/* investments */
+/*----------------------------------------------*/
+/*---------- investments -responsive ----------*/
+/*--------------------------------------------*/
 @media (max-width:500px) {
 	.background-suitman h1 {
 	font-size: 60px;
