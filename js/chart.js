@@ -1,10 +1,10 @@
 // values of pie chart
-var unrestrictedCash = 15.8;
-var restrictedCash = 53.3;
-var taxShelter = 17.3;
-var mutualFunds = 4.7;
-var gics = 8.2;
-var other = 0.7;
+var unrestrictedCash = 20.3;
+var restrictedCash = 50.3;
+var taxShelter = 16.0;
+var mutualFunds = 4.3;
+var gics = 8.9;
+var other = 0.2;
 
 // set ctx
 var ctx = document.getElementById("chart").getContext('2d');
