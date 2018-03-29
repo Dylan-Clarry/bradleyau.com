@@ -1,0 +1,41 @@
+.background-suitman {
+	background: url(../img/background/suits.jpg);
+	background-size: cover;
+	background-position: center 40%;
+	background-attachment: fixed;
+	height: 280px;
+
+	h1 {
+		text-align: center;
+		color: $white;
+		font-size: 80px;
+		padding-top: 80px;
+	}
+}
+	
+
+#investments {
+	padding: 3% 0 0 0;
+
+	p {
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0;
+		line-height: 25px;
+	}
+}
+	
+
+/*----------------------------------------------*/
+/*---------- investments -responsive ----------*/
+/*--------------------------------------------*/
+@media (max-width:500px) {
+	.background-suitman h1 {
+		font-size: 60px;
+	}
+
+	#chart {
+		margin-bottom: 5%;
+	}
+}
+	

@@ -1,0 +1,139 @@
+.background-city {
+	background: url(../img/background/city.jpg);
+	background-size: cover;
+	background-position: center 69%;
+	background-attachment: fixed;
+	height: 280px;
+
+	h1 {
+		padding-top: 80px;
+	}
+}
+	
+
+.background-sky-hills {
+	background: url(../img/background/sky-hills.jpg);
+	background-size: cover;
+	background-position: center 10%;
+}
+	
+
+.background-sky {
+	background: url(../img/background/sky.jpg);
+	background-size: cover;
+	background-position: center 10%;
+}
+	
+
+#experience, #experience p {
+	text-align: center;
+	color: $white;
+}
+	
+
+#experience {
+	hr {
+		border-color: $black;
+		opacity: 0.2;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	>div:first-child h1 {
+		font-size: 80px;
+		font-weight: 300;
+	}
+	
+	.left-align {
+		padding-top: 5%;
+	}
+
+	.left-align p {
+		text-align: left;
+	}
+}
+	
+
+#experience-content {
+	div {
+		padding: 3% 0;
+	}
+
+	div>p:last-child {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	h4 {
+		padding-top: 25px;
+	}
+
+	h4 a {
+		color: $white;
+	}
+}
+	
+
+#experience-school {
+	padding: 5% 0 5% 0;
+
+	h1 {
+		font-size: 60px;
+	}
+}
+	
+
+
+@media(max-width: 998px) {
+	#experience {
+		.left-align {
+			padding: 2% 0;
+		}
+
+		.left-align p {
+			text-align: center;
+		}
+
+		.right-align {
+			text-align: center;
+		}
+	}
+}
+
+/*-----------------------------------------*/
+/*----- experience.html - responsive -----*/
+/*---------------------------------------*/
+@media (max-width:500px) {
+	.background-city {
+		background-attachment: scroll;
+	}
+
+	#experience>div:first-child h1 {
+		font-size: 60px;
+	}
+	
+	#experience-content {
+		padding: 0 3px;
+
+		h1 {
+			font-size: 50px;
+		}
+
+		p {
+			font-size: 1em;
+		}
+	}
+		
+	#experience-school h1 {
+		font-size: 45px;
+	}
+
+	.container-fluid {
+		padding-right: 5px;
+		padding-left: 10px;
+	}
+}
+	

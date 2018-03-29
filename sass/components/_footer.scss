@@ -1,0 +1,41 @@
+#footer {
+	.container {
+		padding: 7% 0;
+	}
+
+	ul, p {
+		text-align: center;
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 4px;
+	}
+
+	i {
+		color: #000;
+		font-size: 23px;
+	}	
+
+	a {
+		color: #000;
+	}
+}
+	
+
+.mobile-links {
+	display: none;
+}
+
+@media(max-width: 767px) {
+	.mobile-links {
+		display: block;
+	}
+
+	#footer .container {
+		padding: 15% 0;
+	}
+}
+	

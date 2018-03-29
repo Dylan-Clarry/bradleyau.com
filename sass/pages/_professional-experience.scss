@@ -1,0 +1,40 @@
+#professional-experience {
+	line-height: 30px;
+	color: $black;
+	padding-top: 150px;
+
+	a {
+		color: $black;
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		padding: 10px 0;
+	}
+		
+	h1 {
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: 700;
+		padding: 20px 0;
+	}
+}
+	
+
+@media(max-width:500px) {
+	#professional-experience h1 {
+		font-size: 45px;
+	}
+
+	img:hover {
+		opacity: 0.5;
+		transition: opacity 0.2s;
+	}
+			
+	.inline {
+		h3, h4, p {
+			display: inline	;
+		}
+	}
+}

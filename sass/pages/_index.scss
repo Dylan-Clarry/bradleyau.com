@@ -1,0 +1,69 @@
+img::selection {
+	background: $grey;
+}
+
+.background-mtn {
+	background: url(../img/background/mountains.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#about {
+	margin-top: 50px;
+
+	div {
+		color: $white;
+	}
+
+	a {
+		color: $white;
+	}
+
+	img  {
+		width: 90%;
+		margin: auto auto;
+	}
+		
+	p::selection, a::selection, h1::selection {
+		background: $grey;
+	}
+}
+
+
+#about-first {
+	h1 {
+		font-size: 50px;
+		font-weight: 700;
+	}
+
+	p {
+		line-height: 30px;
+		padding-top: 20px;
+	}
+}
+	
+
+#about-last {
+	p {
+		text-align: center;
+		padding-top: 30px;
+	}
+}
+
+#about-first, #about-last {
+	padding: 13% 0;
+}
+
+/* index.html - responsive */
+@media (max-width:1200px) and (min-width:975px) {
+	#about-last {
+		position: relative;
+		transform: translateY(12%);
+	}
+}
+
+@media (max-width:975px) {
+	#about-first, #about-last {
+		padding: 5% 0;
+	}
+}
